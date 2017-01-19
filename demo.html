@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<body>
+<canvas id="demo" width="500px" height="500px" style="border:1px solid red">
+</canvas>
+<script>
+ var canvas=document.getElementById('canvas');
+ var con=canvas.getContext('2d');
+          //画图的四个步骤
+          //con.beiginPath();
+		  //con.moveTo();            鼠标摁下的时候
+		  //con.lineTo();
+          //con.closePath();
+		  //con.stroke();           鼠标移动的时候
+          //绘图结束事件            鼠标抬起的时候
+		  
+		  var flag=0;             //设置一个标志，判断鼠标是否摁下
+		  canvas.onmousedown=function(evt){
+		                //首先要获取鼠标在canvas标签内部的坐标点
+                    evt=window.event||evt;		//整合鼠标事件（针对W3C和IE的不同）				
+			             //鼠标在窗口的坐标（a，b） 减去 canvas标签相对于窗口的坐标（c，d）
+				var startX=evt.pageX-this.offsetLeft;
+                var startY=evt.pageY-this.offsetTop;
+                //alert(startX+'-------'+startY);
+	            flag=1;
+				con.beginPath();
+               con.moveTo(startX,startY);				
+		  }
+		  canvas.onmousemove=function(evt){
+		     evt=window.event||evt;
+			 var endX=evt.pageX-this.offsetLeft;
+			 var endY=evt.pageY-this.offsetTop;
+			 if(flag){
+			 con.lineTo(endX,endY);
+			 con.stroke();
+			 }
+		  }
+		  canvas.onmouseup=function(){
+		    flag=0;
+		  }
+		  
+		  canvas.onmouseout=function(){
+		    flag=0;
+		  }
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+</script>
+</body>
+</html>

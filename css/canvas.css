@@ -1,0 +1,48 @@
+*{padding:0;margin:0;list-style:none;border:0;}
+
+body{background:#abcdef;}
+/* 顶部设置 */
+#header{width:900px;height:70px;font-size:40px;background:red;margin:0 auto;
+        text-align:center;line-height:70px;}
+/* 中间设置 */
+#content{width:880px;height:550px;background:gray;margin:0 auto;padding:10px;}
+#tool{height:150px;text-align:center;}
+#tool li{float:left;width:174px;height:140px;background:#ccc;border:1px solid red;}
+/* 图像 */
+#image {text-align:left;padding:20px;}
+#image li{height:30px;border:none;list-style:square inside;border:0px;}
+
+#image li button{background:gray;border:1px solid #000;}
+#image li button:hover{background:gray;border:1px solid #fff;}
+
+/* 工具 *//* 形状 */
+#means,#shape{padding:20px;}
+#means li,#shape li{height:20px;width:40px;border:1px solid #000;margin-bottom:10px;}
+#means li:hover,#shape li:hover{height:20px;width:40px;border:1px solid #fff;margin-bottom:10px;}
+#means img,#shape img{height:20px;width:20px;}
+/*线条*/
+#line{padding:15px;}
+#line li{height:20px;width:120px;border:1px solid #ccc;}
+#line li:hover{height:20px;width:120px;border:1px solid #fff;}
+/*颜色*/
+#color{padding:5px;}
+#color li{width:25px;height:25px;border:1px solid black;margin:2px;}
+#color li:hover{width:25px;height:25px;border:1px solid #fff;margin:2px;}
+#color #red{background:red;}
+#color #black{background:black;}
+#color #blue{background:blue;}
+#color #yellow{background:yellow;}
+#color #orange{background:orange;}
+#color #green{background:green;}
+#color #gray{background:gray;}
+#color #purple{background:purple;}
+#color #white{background:white;}
+#color #pink{background:pink;}
+
+
+
+
+#canvas{background:white;}
+#canvas:hover{cursor:crosshair;}
+/* 底部设置 */
+#footer{width:900px;height:100px;background:red;margin:0 auto;text-align:center;}

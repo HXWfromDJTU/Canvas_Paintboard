@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5在线画图板</title>
+    <link href="css/canvas.css" rel="stylesheet" />
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css" />-->
+  </head>
+  <body>
+    <header id="header">HTML 5在线画板</header>
+    <section id="content">
+    <!-- 工具区域 -->
+    <ul id="tool">
+      <li>
+        <h3>图像</h3>
+		<hr>
+		<ul id="image">
+			<form method="post" action="http://127.0.0.1:9527/Canvas/download.php" id="imgForm" >
+				<input type="hidden" name="data" id="download_img" value=""/>
+		  		<li id="saveImage" onclick="saveImg()"><button>保存图像</button></li>
+		  	</form>
+		  		<li id="clearBoard" onclick="clearBoard()"><button>清除画板</button></li>
+			
+		</ul>
+      </li>
+      <li>
+        <h3>工具</h3>
+		<hr>
+		<ul id="means">
+		  <li id="means_brush" onclick="drawBrush(0)"><image src="images/Brush.png"></li>
+		  <li id="means_eraser" onclick="drawEraser(1)"><image src="images/Eraser.png"></li>
+		  <li id="means_magnifier" onclick="drawMagnifier(2)"><image src="images/Magnifier.png"></li>
+		  <li id="means_straw" onclick="drawStraw(3)"><image src="images/Straw.png"></li>
+		  <li id="means_paint" onclick="drawPaint(4)"><image src="images/Paint.png"></li>
+		  <li id="means_text" onclick="drawText(5)"><image src="images/text.png"></li>
+		</ul>
+      </li>
+      <li>
+        <h3>形状</h3>
+		<hr>
+		<ul id="shape">
+		  <li id="shape_arc"  onclick="drawArc(6)"><image src="images/arc.png"></li>
+		  <li id="shape_arcfill" onclick="drawArcfill(7)"><image src="images/arcfill.png"></li>
+		  <li id="shape_poly" onclick="drawPoly(8)"><image src="images/poly.png"></li>
+		  <li id="shape_rect" onclick="drawRect(9)"><image src="images/rect.png"></li>
+		  <li id="shape_rectfill" onclick="drawRectfill(10)"><image src="images/rectfill.png"></li>
+		  <li id="shape_line" onclick="drawLine(11)"><image src="images/line.png"></li>
+		</ul>
+      </li>
+      <li>
+        <h3>线宽</h3>
+		<hr>
+		<ul id="line">
+		  <li id="lineWidth_1" onclick="setWidth(0)"><image src="images/line1px.png"></li>
+		  <li id="lineWidth_3" onclick="setWidth(1)"><image src="images/line3px.png"></li>
+		  <li id="lineWidth_5" onclick="setWidth(2)"><image src="images/line5px.png"></li>
+		  <li id="lineWidth_8" onclick="setWidth(3)"><image src="images/line8px.png"></li>
+		</ul>
+      </li>
+      <li>
+        <h3>颜色</h3>
+		<hr>
+		<ul id="color">
+		  <li id="red" onclick="setColor(this,0)"></li>
+		  <li id="black" onclick="setColor(this,1)"></li>
+		  <li id="blue" onclick="setColor(this,2)"></li>
+		  <li id="yellow" onclick="setColor(this,3)"></li>
+		  <li id="orange" onclick="setColor(this,4)"></li>
+		  <li id="green" onclick="setColor(this,5)"></li>
+		  <li id="gray" onclick="setColor(this,6)"></li>
+		  <li id="purple" onclick="setColor(this,7)"></li>
+		  <li id="white" onclick="setColor(this,8)"></li>
+		  <li id="pink" onclick="setColor(this,9)"></li>
+		</ul>
+      </li>
+    </ul>
+    <!--  绘图区域 --> 
+    <canvas id="canvas" height="400px"
+    width="880px">您的浏览器不支持canvas标签，赶快升级吧！！！
+	</canvas>
+	<script src="js/canvas.js"></script>
+	</section>
+    <footer id="footer">
+      <small>版权声明 Seeker.D工作室  404813471@qq.com 玮者炫也</small>
+    </footer>
+    <script src="js/jquery-2.1.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
