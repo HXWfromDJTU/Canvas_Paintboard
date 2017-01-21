@@ -1,0 +1,245 @@
+h1,h3,p,a,button{
+	font-family:helvetica;
+}
+.onepage{
+	height: 750px;
+}
+.onepage-bg{
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+}
+#onepage-bg{
+	background-image: url(../img/微信截图_20160904145235.png);
+}
+.head1content{
+	line-height: 75px;
+}
+.title-text{
+	margin-top: 150px;
+}
+.headfondsize h1{
+		line-height: 100px;
+		font-size: 130px;
+		color: #269ABC
+}
+.headfondsize p{
+	line-height: 30px;
+	color:#269ABC
+}
+/*第二屏幕*/
+.twopage{
+	padding: 2px 0 0 2px;
+	height: auto;
+	background-image: ;
+	position: relative;
+}
+.twopage-text{
+	width:100%;
+	text-align: center;
+}
+.twopage-text-h1{
+	margin-left: 120px;
+	letter-spacing: 2px;
+	margin-top: 80px;
+	margin-bottom: 0;bootstrap原本会有一个默认值
+	padding: 20px 0 0 0;
+}
+.twopage-text-h1 img{
+	width:120px;
+	margin-top: -20px;
+}
+.twopage .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.twopage-courses{
+	float: left;
+	background-color: #ffffff;
+	padding:0px 2px 2px 0px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.twopage-courses >a{
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.classIcon h3{
+	margin-top: 120px;
+	color: #d1e973;
+}
+.classIcon h1{
+	color: #fff5e1;
+}
+.classIcon{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color:#fff;
+	opacity: 0;
+}
+.classIcon:hover{
+	background-color: #269ABC;
+	opacity: 0.9;
+	transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+}
+.twopagebtn{
+	width:100%;
+	margin:0% auto;
+	text-align: center;
+}
+.twopagebtn .btn-lg{
+	font-size: 25px;
+}
+#twopage-easy{
+	margin:50px 0;
+	margin-bottom: 100px;
+}
+
+/*第三屏幕样式*/
+.threepage{
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	
+}
+.threepage-bg{
+	position: absolute;
+	height: 100%;
+	width:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#threepage-bg{
+	background-image: url(../img/微信截图_20160904145612.png);
+}
+.threepage-content{
+	width:100%;
+	margin:300px auto;
+	text-align: center;
+}
+.threepage-text h1{
+	font-family: "微软雅黑";
+	font-size: 50px;;
+}
+.threepage-text p{
+	font-size: 20px;
+}
+
+
+
+.fourpage{
+	height: 700px;
+	background-image: url(../img/微信截图_20160904191327.png);
+	margin-top: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.courseInfoText{
+	color: #ffffff;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+}
+.courseInfoText p{
+	margin-top: 25px;
+	font-size: 20px;
+}
+
+
+.fourpage .container{
+	margin-top: 400px;
+}
+
+
+.fivepage-bg{
+	height: 800px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#fivepage-bg{
+	background-image: url(../img/微信截图_20160904145554.png);
+}
+
+.footerText{
+	margin-top: 55px;
+	width:100%;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;	
+}
+.footerbtncenter{
+		margin-top: 50px;
+		text-align: cneter;
+}
+.icon{
+	width:20%;
+}
+.icon:hover{
+	border:2px solid #2B669A;
+}
+
+.foottextbtn{
+	margin-top:50px;
+	width: 100%;
+	text-align: center;
+}
+.foottextbtn-text{
+	margin-top: 20px;
+	color: #2AABD2;
+}
+
+
+
+
+
+.side-nav{
+	position: fixed;
+	top: 45%;
+	right: 20px;
+	z-index: 1;
+}
+.side-nav ul.nav-side-nav{
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.side-nav ul.nav-side-nav >li{
+	display: block;
+	line-height: 1.5em;
+	margin:0;
+	padding: 8px;
+}
+
+.side-nav ul.nav-side-nav >li >a{
+	display: block;
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #269ABC;	
+}
+
+
+
+
+
+
+
+
+
+
+
